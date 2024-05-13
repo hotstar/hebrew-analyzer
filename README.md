@@ -13,3 +13,33 @@ OpenSearch/ElasticSearch plugins are a way to enhance the basic functionality of
 |-----------------------------|---------------|-----------------------------------------------------------------|
 | הַכֹּחַ הַאֱמוּנָה יְכוֹל לְהַזְזִים הָרֵים | ngram-3-words | הכח$,הכח,האמונה$,האמ,אמנ,מנה,יכול$,כל,להזזים$,להז,הזז,הרים$,הרם |
 | הַכֹּחַ הַאֱמוּנָה יְכוֹל לְהַזְזִים הָרֵים | semi-exact    | הכח$,הכח,האמונה$,האמונה,יכול$,יכול,להזזים$,להזזים,הרים$,הרים    |
+## API Examples
+
+```
+GET /_analyze
+{
+  "analyzer": "hebrew-ngram-3-analyzer",
+  "text": "אנחנו חברים טובים מאד"
+}
+
+GET /_analyze
+{
+  "analyzer": "hebrew_semi_exact_analyzer",
+  "text": "אנחנו חברים טובים מאד"
+}
+
+PUT my-hebrew-index
+{
+  "settings": {},
+  "mappings": {
+    "properties": {
+      "text": {
+        "type": "text",
+        "analyzer": "hebrew-ngram-3-analyzer"
+      }
+    }
+  }
+}
+
+
+```
