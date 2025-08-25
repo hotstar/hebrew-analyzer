@@ -24,7 +24,7 @@ apply plugin: 'opensearch.opensearchplugin'
 opensearchplugin {
     name 'opensearch-analysis-hebrew'
     description 'The Hebrew Analysis plugin module for opensearch.'
-    classname 'com.hotstar.hebrew.plugin.HebrewAnalyzerEsPlugin'
+    classname 'com.hotstar.hebrew.plugin.HebrewAnalyzerOsPlugin'
     licenseFile = rootProject.file('LICENSE.txt')
     noticeFile = rootProject.file('NOTICE.txt')
 }
