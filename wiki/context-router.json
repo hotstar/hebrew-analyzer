@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "default_for_code_changes": "skip_wiki",
+  "generated_from": ["wiki/index.md", "wiki/map.md", "wiki pages"],
+  "routes": [
+    {
+      "name": "repo-onboarding",
+      "intent": "repo-onboarding",
+      "confidence": "high",
+      "coverage": "strong",
+      "match": {
+        "keywords": ["onboarding", "setup", "getting started", "how to", "contributing", "install", "build", "test"],
+        "paths": ["**/*.java", "**/*.gradle", "README.md"],
+        "symbols": []
+      },
+      "read": ["overview/repo-overview.md", "engineering/how-to-set-up-the-service.md", "engineering/code-and-naming-conventions.md"],
+      "reason": "Onboarding agents need repo overview, setup guide, and conventions before making changes."
+    },
+    {
+      "name": "api-contract-change",
+      "intent": "api-contract-change",
+      "confidence": "high",
+      "coverage": "strong",
+      "match": {
+        "keywords": ["analyzer", "ngram", "semi-exact", "tokenizer", "token filter", "plugin", "api"],
+        "paths": ["src/main/java/com/hotstar/hebrew/plugin/**/*"],
+        "symbols": ["HebrewAnalyzerOsPlugin", "HebrewNgramAnalyzer", "HebrewSemiExactAnalyzer"]
+      },
+      "read": ["api/public-api.md", "architecture/entry-points.md"],
+      "reason": "API contract changes should respect the registered analyzer names, tokenizer/filter names, and the OpenSearch plugin registration pattern."
+    },
+    {
+      "name": "architecture-change",
+      "intent": "architecture-change",
+      "confidence": "medium",
+      "coverage": "partial",
+      "match": {
+        "keywords": ["pipeline", "filter chain", "analysis flow", "architecture", "component"],
+        "paths": ["src/main/java/com/hotstar/hebrew/analysis/**/*"],
+        "symbols": []
+      },
+      "read": ["architecture/architecture-overview.md", "data/data-flow.md"],
+      "reason": "Architecture changes should understand the current analysis pipeline layout and token flow. Partial coverage; verify details in code."
+    },
+    {
+      "name": "domain-behavior-change",
+      "intent": "domain-behavior-change",
+      "confidence": "high",
+      "coverage": "strong",
+      "match": {
+        "keywords": ["hebrew", "plural", "stop letter", "ngram", "niqqud", "sefaria", "lingustic"],
+        "paths": ["src/main/java/com/hotstar/hebrew/analysis/**/*"],
+        "symbols": ["PluralFilter", "StopLetterFilter", "SefariaTokenizer", "SefariaNGramTokenFilter", "SefariaSemiExactFilter"]
+      },
+      "read": ["domains/domain-concepts.md", "domains/external-edge-cases.md"],
+      "reason": "Hebrew linguistic behavior changes should understand the domain concepts, plural handling, stop letter rules, and known edge cases."
+    }
+  ]
+}

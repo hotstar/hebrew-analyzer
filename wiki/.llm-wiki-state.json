@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "last_codebase_scan_at": "2026-08-29T13:42:00Z",
+  "last_full_scan_at": "2026-08-29T13:42:00Z",
+  "last_scan_mode": "full",
+  "scan_config_hash": "sha256:7a912a6a9f09788bda8068035c0344f8289f888110eaf8669effcf33fe576109",
+  "files": {
+    "opensearch-hebrew-analyser/build.gradle": {
+      "sha256": "sha256:43075745df23bbbcd7f159880cecd91f1960cb323c3302cc6c2988c1ead8eece",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/settings.gradle": {
+      "sha256": "sha256:b76b59e267f5a264d77f65c93eda8c65f57e1dc0a917f3189c9da12d90385a16",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/gradle.properties": {
+      "sha256": "sha256:bf92b176e266ca8f3f0e5fe69637f349df0fdc3130aa11aec93f01c40981dc41",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/es-plugin.properties": {
+      "sha256": "sha256:50aa8b5bd4e75e03b0e6e22005b8fdfb6f16c8221d7830d2db3351c17de18f9f",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/HebrewNgramAnalyzer.java": {
+      "sha256": "sha256:0122b1fe61d9c2b1b1d41019d259137a34e80761c02e4c4a252a7abfae6c56a2",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/HebrewSemiExactAnalyzer.java": {
+      "sha256": "sha256:1a7d06d0ee31c8d77d4c5a1e08aeff5b7568a6cf9dd0287d2c126f092102fa1b",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/HebrewTokenTypeAttribute.java": {
+      "sha256": "sha256:b975edf4250cecfc508c1c719424762334fc65c6e5841284e139851160e3bdeb",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/HebrewTokenTypeAttributeImpl.java": {
+      "sha256": "sha256:4fdaa8fcef76131cbd440503528a3071e26f2719052cf2675f5370478b932416",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/NGramizer.java": {
+      "sha256": "sha256:b86260d1e7e5b808edf3a3488056e766647fec2e3a4305a014e4bbdcf52b1528",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/PluralFilter.java": {
+      "sha256": "sha256:31f28e167f90d7b4e96687759e2523fe828185ec0581dc934591df948a308c42",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/SefariaNGramTokenFilter.java": {
+      "sha256": "sha256:6da82099790042944bc62369a2f5b1b170b44fc652030e877f84571e320749f3",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/SefariaSemiExactFilter.java": {
+      "sha256": "sha256:0bd0ffcdc0a993bd4e7f1602ec5068f4c36413ff335231f5908777ce8a452f4c",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/SefariaTokenizer.java": {
+      "sha256": "sha256:a2b26f5f2ce9183ca33653f2db465d3f7e23e1fc6782eaf7dc921634e61d69a3",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/analysis/StopLetterFilter.java": {
+      "sha256": "sha256:97deed3d5a992b71f7e94f2eadc4df490c357ed737f372a28e6665f6927294b7",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/plugin/HebrewAnalyzerOsPlugin.java": {
+      "sha256": "sha256:783b2e8224b1a652e9c2b96545eadd588db4455daccd74048ecea1fec863061f",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/plugin/HebrewNgramAnalyzerProvider.java": {
+      "sha256": "sha256:5a5e758de8b5616bfafbf54a1e1c55f5733d27439959b73e6aeb45ca929da3fa",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/plugin/HebrewSemiExactAnalyzerProvider.java": {
+      "sha256": "sha256:2344b09b35ecf4b2478584836921d6c0988e69f68f8a29a685db9712308199d8",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/plugin/HebrewTokenizerTokenizerFactory.java": {
+      "sha256": "sha256:56f7a82c7ad770480d2a01ad7619d4141aaba7a31a554ae93e21f259bdf008c3",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    },
+    "opensearch-hebrew-analyser/src/main/java/com/hotstar/hebrew/plugin/HebrewNoOpTokenFilterFactory.java": {
+      "sha256": "sha256:3d68b94ac9184effbb1b53fba6d2075ee50d669e9da6d0a4edda23c47f69223f",
+      "last_seen_at": "2026-08-29T13:42:00Z"
+    }
+  },
+  "external_sources": {}
+}
